@@ -1,0 +1,29 @@
+{
+  "name": "be-chat-app",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start:dev": "nodemon --exec tsx src/index.ts"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cloudinary": "^2.9.0",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.1.5",
+    "nodemon": "^3.1.11",
+    "socket.io": "^4.8.3",
+    "ts-node": "^10.9.2"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.28.6",
+    "@babel/preset-typescript": "^7.28.5",
+    "@types/bcrypt": "^6.0.0",
+    "@types/express": "^5.0.6",
+    "@types/jsonwebtoken": "^9.0.10",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+}
