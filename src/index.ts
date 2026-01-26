@@ -2,6 +2,7 @@ import express from "express";
 import dotenv from "dotenv";
 import authRoutes from "./routes/auth.route.ts";
 import { connectDB } from "./lib/database.ts";
+import cookieParser from "cookie-parser";
 
 dotenv.config();
 
@@ -10,6 +11,7 @@ const PORT=process.env.APP_PORT;
 
 
 app.use(express.json());
+app.use(cookieParser());
 
 app.use("/api/auth", authRoutes);
 
