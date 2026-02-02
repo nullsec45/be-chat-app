@@ -3,6 +3,7 @@ import dotenv from "dotenv";
 import authRoutes from "./routes/auth.route.ts";
 import { connectDB } from "./lib/database.ts";
 import cookieParser from "cookie-parser";
+import messageRoutes from "./routes/message.route.ts";
 
 dotenv.config();
 
@@ -14,6 +15,7 @@ app.use(express.json());
 app.use(cookieParser());
 
 app.use("/api/auth", authRoutes);
+app.use("/api/messages", messageRoutes);
 
 app.listen(PORT, () => {
     console.log("server is running on port:" +PORT);
